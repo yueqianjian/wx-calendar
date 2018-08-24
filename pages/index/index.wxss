@@ -1,0 +1,96 @@
+view {
+  width: 100%;
+  box-sizing: border-box;
+}
+.v_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.header {
+  height: 250rpx;
+  background: #6154FB;
+  padding: 40rpx 30rpx 0;
+}
+.button {
+  color: #6154FB;
+  font-size: 28rpx;
+  width: 610rpx;
+  height: 80rpx;
+  margin: 0 auto;
+  border-radius: 40rpx;
+  background: #ffffff;
+}
+
+.main {
+  padding: 0 30rpx;
+  position: relative;
+}
+.calendar {
+  width:690rpx;
+  height:670rpx;
+  border-radius:10rpx;
+  position: relative;
+  top: -50rpx;
+  padding: 0 40rpx;
+  background: #ffffff;
+}
+.time {
+  height: 90rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.time > view {
+  color: #232323;
+  font-size: 30rpx;
+}
+.time > view:first-child {
+  width: 90rpx;
+  justify-content: flex-start;
+}
+.time > view:nth-child(2) {
+  flex: 1;
+}
+.time > view:last-child {
+  width: 90rpx;
+  justify-content: flex-end;
+}
+.week_name {
+  height: 116rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.week_name > view {
+  font-size: 24rpx;
+  color: #939393;
+  width: 54rpx;
+}
+.week {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+}
+.days {
+  display: flex;
+  justify-content: center;
+
+  flex: 0 0 14.2857%;
+  height: 54rpx;
+  margin-bottom: 30rpx;
+}
+.days > view {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 100%;
+  font-size: 30rpx;
+  color: #939393;
+}
+.days_color {
+  color: #000000!important;
+}
+.days_bg {
+  background: RGB(115,205,247)!important;
+}

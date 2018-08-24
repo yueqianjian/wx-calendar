@@ -1,0 +1,26 @@
+<view>
+  <view class="header">
+    <view class="button v_text">日历</view>
+  </view>
+  <view class="main">
+    <view class="calendar">
+      <view class="time">
+        <view class="v_text" bindtap="reduceMonth">＜</view>
+        <view class="v_text">{{showTime.year}}年{{showTime.month + 1}}月</view>
+        <view class="v_text" bindtap="addMonth">＞</view>
+      </view>
+      <view class="week_name">
+        <view wx:for="{{weekName}}" wx:key="{{item}}" class="v_text">
+          {{ item }}
+        </view>
+      </view>
+      <view class="week">
+        <view wx:for="{{days}}" wx:key="{{item.num}}" class="days">
+          <view class="v_text days_bg {{item.isNow ? 'days_color':''}}">
+            {{ item.num }}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
